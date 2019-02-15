@@ -20,7 +20,7 @@ Schedule: StepLR with step_size=8, gamma=0.2
 
 - For all our models, since input images are 18-channels collected from 2 sensors, we split input images channels into 8 and 10 channels respectively, two global pooling features were weighted sum before we get the final prediction.
 
-- We’ve noticed that image resolution matters, e.g. for ResNet18 model, original size 32*32 gives us 0.835 accuracy, while 64*64 gives us 0.852 accuracy.
+- We’ve noticed that image resolution matters, e.g. for ResNet18 model, original size 32-32 gives us 0.835 accuracy, while 64-64 gives us 0.852 accuracy.
 
 - Final results were obtained by 10 models ensemble, including ResNet18, ResNet34, VGG16, self-designed dual path SeResNet18, ResNet18 with VLAD, etc.
 
