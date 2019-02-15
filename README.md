@@ -29,7 +29,7 @@ Schedule: StepLR with step_size=8, gamma=0.2
 - Different models requires different time, basically from 15 mins to 60 mins for 1 epoch. But we don’t have time for verifying this due to the deadline and some other stuffs. Maximum training epoch is 30 in our setting. Inference time is about 23fps to 80 fps.
 
 
-## usage：
+## Usage：
 
 *train.py* is training code, we use both training set and validation set for training, 
 four *.npy* are mean and std computed through the whole training set.
