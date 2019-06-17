@@ -14,7 +14,7 @@ Schedule: StepLR with step_size=8, gamma=0.2
 ---
 ## Solution：
 
-- Validation set is the most important data for this task, because we’ve noticed that there is a shift between training set and validation set, while test set and validation set is very likely come from a same distribution.
+- Validation set is the most important data for this task, because we’ve noticed that there is a shift between training set and validation set, while test set and validation set is very likely come from same distribution.
 
 - We modified off-the-shelf networks to give us a higher feature map resolution, e.g. ResNet to give us a 4 times downsampling instead of 32. We doing this because original resolution is small compare with other images, higher feature map resolution helps with prediction accuracy. 
 
@@ -24,9 +24,9 @@ Schedule: StepLR with step_size=8, gamma=0.2
 
 - Final results were obtained by 10 models ensemble, including ResNet18, ResNet34, VGG16, self-designed dual path SeResNet18, ResNet18 with VLAD, etc.
 
-- False label will surely helps, because we’ve noticed that the accuracy is nearly fixed in all test set, this means that all of the test set come from same distribution.
+- False label will surely helps, because we’ve noticed that the accuracy is nearly fixed in all test set, this means that all of the test set come from same distribution. But we don’t have time for verifying this due to the deadline and some other stuffs.
 
-- Different models requires different time, basically from 15 mins to 60 mins for 1 epoch. But we don’t have time for verifying this due to the deadline and some other stuffs. Maximum training epoch is 30 in our setting. Inference time is about 23fps to 80 fps.
+- Different models requires different time, basically from 15 mins to 60 mins for 1 epoch. Maximum training epoch is 30 in our setting. Inference time is about 23fps to 80 fps.
 
 
 ## Usage：
